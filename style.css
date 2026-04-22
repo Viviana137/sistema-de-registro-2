@@ -1,0 +1,184 @@
+.secciones {
+    background-color: #4c9fce;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 20px;
+    padding: 40px;
+    justify-content: right;
+    
+}
+.buttonIn, .buttonLaAcademia, .buttonProgramas, .buttonNuestroImpacto, .buttonContactanos {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tituloPrincipal{
+    text-align: center;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    margin-left: 200px;
+}
+
+.contenedorTitulo{
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 800px; 
+}
+.contenedorSecciones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px; 
+    background-color: #4c9fce;
+}
+.buttonQuienesSomos{
+    background-color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 370px;
+}
+
+.fondo{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.tituloProgramas{
+    text-align: center;
+    font-size: 40px;
+    color: #e3b700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 50px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorProgramas{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+
+}
+.Programas .Programa{
+    box-shadow: 0px 1px 4px #636363;
+    background-color: #ffffff;
+    padding: 90px;
+    
+    width: 400px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border-radius: 8px;
+    gap: 20px;
+    margin-top: 90px;
+}
+.Programas .Programa-T{
+    color: #29678b;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.parrafo-P{
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.imagenP1{
+    background-image: url("imagenes/img1.png");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;  
+    margin-bottom: 20px;
+}
+.imagenP2{
+    background-image: url("imagenes/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;  
+}
+.imagenP3{
+    background-image: url("imagenes/img3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;  
+}
+
+
+
+.tituloGaleria{
+    text-align: center;
+    font-size: 60px;
+    color: #326583;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 50px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.Contacto{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 105px;
+    margin-bottom: 200px;
+}
