@@ -161,6 +161,35 @@
     display: flex;
     justify-content: center;
 }
+.contenedorGaleria{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding-bottom: 50px;
+}
+.ImagenGaleria1{
+    background-image: url("imagenes/im1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 400px;
+    margin-top: 20px;  
+    margin-bottom: 20px;  
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ImagenGaleria2{
+    background-image: url("imagenes/in2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 400px;
+    margin-top: 20px;  
+    margin-bottom: 20px;    
+    cursor: pointer;
+}
 
 
 
@@ -173,12 +202,70 @@
     display: flex;
     flex-direction: column;
     color: white;
+    position: relative;
 }
-.Contacto{
-    color: white;
+.contacto{
+    color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     text-align: right;
-    margin-right: 105px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
+    margin-top: -70px;
+    margin-right: 250px;
+    
+}
+
+.footerContacto ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px;
+    gap: 20px;    
+}
+
+.footerContacto li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin-right: 80px;
+    
+}
+.footerContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+    
+}
+
+.icono{
+    width: 20px;
+    height: 20px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+}
+
+.iconoRedes{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.logo{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
 }
