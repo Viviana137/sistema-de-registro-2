@@ -4,98 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia Águilas Futbol Club</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-
         <div class="secciones">
-            <button>Inicio</button>
-            <button>La Academia</button>
-            <button>Programas</button>
-            <button>Galeria</button>
-            <button>Patrocinadores</button>
+                <button class="buttonIn">Inicio</button>
+                <button class="buttonLaAcademia">La Academia</button>
+                <button class="buttonProgramas">Programas</button>
+                <button class="buttonNuestroImpacto">Nuestro impacto</button>
+                <button class="buttonContactanos">Contáctanos</button>
         </div>
-        <div class="TituloAcademia">
-        <h1>La Academia</h1>
-        </div>
+
+
+        <h1 class="TituloAcademia">La Academia</h1>
+
     </header>
 
     <div class=" mision">
         <h2>Misión</h2>
-        <p>La misión de la Academia Águilas Futbol Club es desarrollar 
-                jóvenes talentos y formar futuros profesionales del fútbol, 
-                con un enfoque en el crecimiento personal y el desarrollo técnico.</p>   
+        <p>La misión de la Academia Águilas Futbol Club es desarrollar
+                jóvenes talentos y formar futuros profesionales del fútbol,
+                con un enfoque en el crecimiento personal y el desarrollo técnico.</p>
     </div>
         
     <div class=" vision">
         <h2>Visión</h2>
-        <p>Nuestra visión es ser reconocidos como una de las mejores academias de fútbol 
-                a nivel nacional, proporcionando un ambiente de entrenamiento de alta calidad 
+        <p>Nuestra visión es ser reconocidos como una de las mejores academias de fútbol
+                a nivel nacional, proporcionando un ambiente de entrenamiento de alta calidad
                 y oportunidades para que nuestros jugadores alcancen su máximo potencial.</p>
     </div>
     
-    <h2>Nuestro Equipo </h2>
+    <h2 class="nuestroEquipo">Nuestro Equipo </h2>
 
+    <div class ="NE">
 
         <div class="Integrante 1">
+            
+            <img src="imagenes/imgNE/int1.jpg" alt="Integrante del equipo" >
             <h3>Integrante 1</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div class="Integrante 2">
+            
+            <img src="imagenes/imgNE/int2.jpg" alt="Integrante del equipo">
             <h3>Integrante 2</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div class="Integrante 3">
+            
+            <img src="imagenes/imgNE/int3.jpg" alt="Integrante del equipo">
             <h3>Integrante 3</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div>
+            
+            <img src="imagenes/imgNE/int4.jpg" alt="Integrante del equipo">
             <h3>Integrante 4</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div class=" Integrante 5">
+            
+            <img src="imagenes/imgNE/int5.jpg" alt="Integrante del equipo">
             <h3>Integrante 5</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div class="Integrante 6">
+            
+            <img src="imagenes/imgNE/int6.png" alt="Integrante del equipo">
             <h3>Integrante 6</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div class="Integrante 7">
+            
+            <img src="imagenes/imgNE/int7.png" alt="Integrante del equipo">
             <h3>Integrante 7</h3>
-            <h3>INSERTAR FOTO</h3>
         </div>
 
         <div class="Integrante 8">
+            
+            <img src="imagenes/imgNE/int8.png" alt="Integrante del equipo">
             <h3>Integrante 8</h3>
-            <h3>INSERTAR FOTO</h3>
-        </div>
-    
-</body>
-
-<footer>
-    <div class=" fondo">
-        <div class="logo">
-            <p>Logo</p>
-        </div>
-
-        <div class="redes">
-            <p>redes</p>
-        </div>
-
-        <div class="contacto">
-            <h3> Contacto</h3>
-            <li>IMAGEN -Dirección: Calle Principal, #123</li>
-            <li>IMAGEN -Teléfono: (123) 456-7890</li>
-            <li>IMAGEN -Email: info@academiaaguilas.com</li>
-            <li>IMAGEN -Horario: lunes a domingo 9am a 8pm</li>
         </div>
     </div>
-</footer>   
-</html>
+</body>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
