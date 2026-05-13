@@ -1,3 +1,11 @@
+/*INDEX*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .secciones {
     background-color: #4c9fce;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,7 +21,7 @@
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -83,7 +91,6 @@
 
 
 
-
 .tituloProgramas{
     text-align: center;
     font-size: 40px;
@@ -146,9 +153,8 @@
     background-position: center;
     height: 150px;
     width: 100%;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
 }
-
 
 
 .tituloGaleria{
@@ -161,89 +167,422 @@
     display: flex;
     justify-content: center;
 }
-.contenedorGaleria{
-    display: flex;
-    justify-content: center;
-    gap: 90px;
-    padding-bottom: 50px;
+
+
+
+
+
+
+/*LaACADEMIA*/
+.TituloAcademia{
+    margin: 0;
+    padding: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8f8f8;
 }
-.ImagenGaleria1{
-    background-image: url("imagenes/im1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 400px;
-    margin-top: 20px;  
-    margin-bottom: 20px;  
-    cursor: pointer;
+
+.mision{
+    
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+    align-items: left;
+    margin: 0 auto;
+    margin-top: 200px;
 }
-.ImagenGaleria2{
-    background-image: url("imagenes/in2.jpg");
+.mision h2{
+    text-align: left;
+    color: #e3b700;
+    font-size: 40px;
+}
+.mision p{
+    color: #000000;
+    font-size: 25px;
+
+}
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    align-items: right;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.vision h2{
+    text-align: right;
+    color: #4c9fce;
+    font-size: 40px;
+}
+.vision p{
+    color: #000000;
+    font-size: 25px;
+    text-align: right;
+}
+
+.nuestroEquipo{
+    text-align: center;
+    font-size: 45px;
+    color: #e3b700;
+}
+
+.NE{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1100px;
+    margin-top: 150px;
+}
+
+.NE > div {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.NE img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    border-radius: 10px;
+}
+
+.NE h3 {
+    margin-top: 10px;
+    color: #29678b;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+/*PROGRAMAS*/
+
+.IMGP{
+    
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("imagenes/imgP/fondo.jpg");
     background-size: cover;
     background-position: center;
-    height: 250px;
-    width: 400px;
-    margin-top: 20px;  
-    margin-bottom: 20px;    
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.IMGP h1{
+    text-align: left;
+    font-size: 120px;
+    color: seashell;
+    padding: 100px;
+    margin-top: 400px;
+
+}
+.ContenedorProg1 {
+    display: flex;
+    align-items: right;
+    gap: 500px;
+    background-color: #f5f5f5;
+    padding: 90px;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+.infoProg1 h3{
+    font-size: 40px;
+    text-align: right;
+    color: #e3b700;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.infoProg1 p{
+    font-size: 30px;
+    text-align: right;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 100px;
+}
+
+
+.imagProg1 {
+    width: 40%;
+}
+.imagProg1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ContenedorProg2{
+    display: flex;
+    align-items: left;
+    background-color: #4c9fce;
+    padding: 90px;
+    width: 80%;
+    border-radius: 10px;
+    margin: 50px auto;
+    gap: 500px;
+    flex-direction: row-reverse;
+}
+.imagProg2{
+    width: 40%;
+}
+.imagProg2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.infoProg2 h3{
+    font-size: 40px;
+    color: #f5f5f5;
+    text-align: left;
+}
+
+.infoProg2 p{
+    text-align: left;
+    font-size: 30px;
+    color: #f5f5f5;
+    margin-top: 100px;
+    line-height: 1.5;
+}
+
+
+
+/*NUESTRO IMPACTO*/
+
+.IMPN{
+    background-color: #4c9fce;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.IMPN h1{
+    text-align: center;
+    font-size: 95px;
+    color: #ffffff;
+    margin-bottom: 60px;
+    padding: 0;
+}
+.contenedorIMPN{
+    background-color: #f8f8f8;
+    padding: 100px;
+}
+.numeros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+    margin: 0 auto;
+    padding: 60px;
+    max-width: 1600px;
+}
+.numeros > div{
+    background-color: #ffffff;
+    display: block;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    height: 300px;
+    box-shadow: 0px 1px 4px #636363;
+    
+}
+.numeros h3{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 80px;
+    color: #e3b700;
+}
+
+.numeros p{
+    text-align: center;
+    font-size: 40px;
+
+}
+.numeros2 h3{
+    color: #4c9fce;
+}
+
+
+
+/* CONTACTANOS */
+
+.contactanosDatos{
+    background-color: #f5f5f5;
+    padding: 100px 120px;
+}
+
+.contactanosDatos h1{
+    text-align: center;
+    font-size: 80px;
+    color: #29678b;
+    margin-bottom: 80px;
+}
+
+/* CONTENEDOR INFO + MAPA */
+.contactoInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+/* DATOS */
+.datos ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.datos li{
+    font-size: 24px;
+    color: #444;
+}
+
+/* MAPA */
+.contactoMapa{
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 40px;
+}
+
+/* FORMULARIO */
+.contactanosFormulario{
+    background-color: #efefef;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+
+    padding: 120px;
+}
+
+/* TEXTO FORMULARIO */
+.formularioTexto{
+    width: 500px;
+}
+
+.formularioTexto h2{
+    color: #d4a400;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+/* FORMULARIO */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label{
+    font-size: 20px;
+    color: #444;
+}
+
+form input,
+form textarea{
+    padding: 18px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* BOTON */
+form button{
+    width: 180px;
+
+    padding: 18px;
+
+    background-color: #d4a400;
+    color: white;
+
+    border: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
     cursor: pointer;
 }
 
+/* IMAGEN */
+.formularioImagen{
+    width: 450px;
+    height: 450px;
+
+    background-color: #4c9fce;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 40px;
+}
 
 
 
+
+/*FOOTER*/
 
 
 .footer{
-    background-color: black;
+    background-color: rgb(19, 18, 18);
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
     color: white;
-    position: relative;
+    margin-top: 200px;
+
 }
+
+.footerContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .contacto{
-    color: rgb(255, 255, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    text-align: right;
+    color: white;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 30px;
     margin-bottom: 20px;
-    margin-top: -70px;
-    margin-right: 250px;
-    
 }
 
 .footerContacto ul{
+    list-style: none;
     display: flex;
     flex-direction: column;
-    list-style: none;
-    padding-left: 20px;
-    margin: 10px;
-    gap: 20px;    
+    gap: 15px;
+    padding: 0;
 }
 
 .footerContacto li{
     display: flex;
     align-items: center;
     gap: 10px;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
-    margin-right: 80px;
-    
-}
-.footerContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    
-    
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .icono{
@@ -251,33 +590,21 @@
     height: 20px;
 }
 
+
 .redes{
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    align-items: center;
     gap: 20px;
 }
 
 .iconoRedes{
     width: 50px;
     height: 50px;
-    margin-top: 50px;
     cursor: pointer;
 }
-.logo{
-    width: 180px;
-    height: 170px;
-    margin: 0;
-    align-items: center;
-    display: flex;
-    margin-top: 60px;
-}
 
-.ContenedorLogoF{
-    
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0;
-    margin-left: 100px;
-    
+.logo{
+    width: 140px;
+    height: auto;
+    display: block;
 }
