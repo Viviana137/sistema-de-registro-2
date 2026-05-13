@@ -4,77 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <header>
     <div class="secciones">
-            <button>Inicio</button>
-            <button>La Academia</button>
-            <button>Programas</button>
-            <button>Galeria</button>
-            <button>Patrocinadores</button>
+        <button class="buttonIn">Inicio</button>
+        <button class="buttonLaAcademia">La Academia</button>
+        <button class="buttonProgramas">Programas</button>
+        <button class="buttonNuestroImpacto">Nuestro impacto</button>
+        <button class="buttonContactanos">Contáctanos</button>
     </div>
 </header>
 
 <body>
     <section class="contactanosDatos">
+
         <h1>Contáctanos</h1>
+
         <div class="contactoInfo">
-            <li>IMAGEN-Dirección: Calle Principal, #123</li>
-            <li>IMAGEN-Teléfono: (123) 456-7890</li>   
-            <li>IMAGEN-Email: info@academiaaguilas.com</li>    
-            <li>IMAGEN-Horario: lunes a domingo 9am a 10pm</li>
-        
+
+            <div class="datos">
+
+                <ul>
+            <li>
+                <img src ="imagenes/imgFT/ub.png" alt="ubicacion" class="icono">
+                Dirección: Calle Principal, #123
+            </li>
+
+            <li>
+                <img src ="imagenes/imgFT/telf.png" alt="telefono" class="icono">
+                Teléfono: (123) 456-7890
+            </li>
+
+            <li>
+                <img src ="imagenes/imgFT/sobre.png" alt="email" class="icono">
+                Email: info@academiaaguilas.com
+            </li>
+            <li>
+                <img src ="imagenes/imgFT/clock.png" alt="horario" class="icono">
+                Horario: lunes a domingo 9am a 8pm
+            </li>
+        </ul>
+
+            </div>
+
             <div class="contactoMapa">
-                <h1>IMAGEN-Mapa</h1>
+                MAPA
             </div>
-        </div>
-    </section>  
 
-    <section class="contactanosFormulario">
-        <h1>Formulario de Contacto</h1>
-        <div class="formulario">
-            <form action="enviar_formulario.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contenedorImagen">   
-            <div class="formularioImagen">
-                <h1>IMAGEN-Formulario</h1>
-            </div>
         </div>
 
     </section>
+
+
+    <section class="contactanosFormulario">
+
+        <div class="formularioTexto">
+
+            <h2>Escríbenos</h2>
+
+            <form>
+
+                <label>Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre">
+
+                <label>Correo</label>
+                <input type="email" placeholder="Escribe tu correo">
+
+                <label>Teléfono</label>
+                <input type="tel" placeholder="Escribe tu teléfono">
+
+                <label>Mensaje</label>
+                <textarea rows="5"></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </div>
+
+
+        <div class="contenedorImagen">
+
+            <div class="formularioImagen">
+                IMAGEN
+            </div>
+
+        </div>
+
+    </section>
+
 </body>
-<footer>
-    <div class=" fondo">
-        <div class="logo">
-            <p>Logo</p>
-        </div>
 
-        <div class="redes">
-            <p>redes</p>
-        </div>
+<div id="footer"></div>
 
-        <div class="contacto">
-            <h3> Contacto</h3>
-            <li>IMAGEN -Dirección: Calle Principal, #123</li>
-            <li>IMAGEN -Teléfono: (123) 456-7890</li>
-            <li>IMAGEN -Email: info@academiaaguilas.com</li>
-            <li>IMAGEN -Horario: lunes a domingo 9am a 8pm</li>
-        </div>
-    </div>
-</footer> 
-
-</html>
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
