@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro impacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
     <div class="secciones">
-            <button>Inicio</button>
-            <button>La Academia</button>
-            <button>Programas</button>
-            <button>Galeria</button>
-            <button>Patrocinadores</button>
+        <button class="buttonIn">Inicio</button>
+        <button class="buttonLaAcademia">La Academia</button>
+        <button class="buttonProgramas">Programas</button>
+        <button class="buttonNuestroImpacto">Nuestro impacto</button>
+        <button class="buttonContactanos">Contáctanos</button>
     </div>
 
 <body>
-    <seccion class=" impactoConNumeros">
-        <h1>Nuestro Impacto</h1>
-        <div class="numeros1">
-            <h3>100+</h3>
-            <p>Jugadores formados</p>
+    <layout>
+        <div class="IMPN">
+            <h1>Nuestro Impacto</h1>
         </div>
 
-        <div class="numeros2">
-            <h3>50+</h3>
-            <p>Partidos ganados</p>
-        </div>
+    <div class="contenedorIMPN">
+        <div class="numeros">
+            <div class="numeros1">
+                <h3>100+</h3>
+                <p>Jugadores formados</p>
+            </div>
 
-        <div class="numeros3">
-            <h3>10</h3>
-            <p>Años de experiencia</p>
-        </div>
+            <div class="numeros2">
+                <h3>50+</h3>
+                <p>Partidos ganados</p>
+            </div>
 
-    </seccion>
+            <div class="numeros1">
+                <h3>10</h3>
+                <p>Años de experiencia</p>
+            </div>
+        </div>
+    </div>
+
     
+
+
     <seccion class="compromisoSocial">
-   
         <div class="CompromisoTitulo">
             <h2>Compromiso Social</h2>
             <p>En Águilas Futbol Club, estamos comprometidos con el desarrollo de nuestra comunidad.
@@ -119,23 +127,15 @@
         </div>
     </seccion>
 </body>
-<footer>
-    <div class=" fondo">
-        <div class="logo">
-            <p>Logo</p>
-        </div>
 
-        <div class="redes">
-            <p>redes</p>
-        </div>
 
-        <div class="contacto">
-            <h3> Contacto</h3>
-            <li>IMAGEN -Dirección: Calle Principal, #123</li>
-            <li>IMAGEN -Teléfono: (123) 456-7890</li>
-            <li>IMAGEN -Email: info@academiaaguilas.com</li>
-            <li>IMAGEN -Horario: lunes a domingo 9am a 8pm</li>
-        </div>
-    </div>
-</footer>   
-</html>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
