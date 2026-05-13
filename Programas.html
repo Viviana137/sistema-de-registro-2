@@ -4,80 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
     <div class="secciones">
-            <button>Inicio</button>
-            <button>La Academia</button>
-            <button>Programas</button>
-            <button>Galeria</button>
-            <button>Patrocinadores</button>
-    </div>
+                <button class="buttonIn">Inicio</button>
+                <button class="buttonLaAcademia">La Academia</button>
+                <button class="buttonProgramas">Programas</button>
+                <button class="buttonNuestroImpacto">Nuestro impacto</button>
+                <button class="buttonContactanos">Contáctanos</button>
+        </div>
 
-    <div class="tituloProg">
+    <div class="IMGP">
         <h1>Programas</h1>
     </div>
-
-    <div class="imagenProg">
-        <h2>IMAGEN DE FONDO</h2>
-    </div>
 </header>
+
+
 <body>
-    <div class = contenedorProg></div>
-        <div class="ContenedorProgr1">
-            <div class="Porgrama1">
-                <h3>Programa de Desarrollo Juvenil</h3>
-                <p>Enfocado en jóvenes talentos, nuestro programa de desarrollo juvenil 
-                ofrece entrenamiento intensivo y oportunidades de competencia para jugadores 
+    <div class = "ContenedorProg1">
+        <div class="imagProg1">
+            <img src="imagenes/imgP/P1.jpg" alt="Imagen del programa de desarrollo juvenil">
+        </div>
+        <div class="infoProg1">
+            <h3>Programa de Desarrollo Juvenil</h3>
+            <p>Enfocado en jóvenes talentos, <br>nuestro programa de desarrollo juvenil<br> 
+                ofrece entrenamiento intensivo<br> y oportunidades de competencia para jugadores<br> 
                 de todas las edades.</p>
-            </div>
-
-            <div class="imagProg1">
-                <h3>IMAGEN</h3>
-            </div>
         </div>
-        <div class="ContenedorProgr2">
-            <div class="Programa2">
-                <h3>Programa de Entrenamiento Avanzado</h3>
-                <p>Diseñado para jugadores con experiencia, este programa se centra en mejorar 
-                habilidades técnicas, tácticas y físicas para competir a niveles más altos.</p>
-            </div>
-
-            <div class="imagProg2">
-                <h3>IMAGEN</h3>
-            </div>
+        
+    </div>
+    
+    <div class="ContenedorProg2">
+        <div class="imagProg2">
+            <img src="imagenes/imgP/P2.jpg" alt="Imagen del programa de desarrollo juvenil">
         </div>
-
-        <div class="ContenedorProgr3">
-            <div class="Programa3">
-                <h3>Programa de Entrenamiento Avanzado</h3>
-                <p>Diseñado para jugadores con experiencia, este programa se centra en mejorar 
-                habilidades técnicas, tácticas y físicas para competir a niveles más altos.</p>
-            </div>
-
-            <div class="imagProg3">
-                <h3>IMAGEN</h3>
-            </div>
-        </div>
-    </div> 
-</body>
-<footer>
-    <div class=" fondo">
-        <div class="logo">
-            <p>Logo</p>
-        </div>
-
-        <div class="redes">
-            <p>redes</p>
-        </div>
-
-        <div class="contacto">
-            <h3> Contacto</h3>
-            <li>IMAGEN -Dirección: Calle Principal, #123</li>
-            <li>IMAGEN -Teléfono: (123) 456-7890</li>
-            <li>IMAGEN -Email: info@academiaaguilas.com</li>
-            <li>IMAGEN -Horario: lunes a domingo 9am a 8pm</li>
+        <div class="infoProg2">
+            <h3>Programa de Entrenamiento Avanzado</h3>
+            <p>Diseñado para jugadores con experiencia, <br> este programa se centra en mejorar 
+            habilidades técnicas,<br> tácticas y físicas para competir a niveles más altos.</p>
         </div>
     </div>
-</footer>   
-</html>
+
+
+    
+    <div class = "ContenedorProg1">
+        <div class="imagProg1">
+            <img src="imagenes/imgP/P3.jpg" alt="Imagen del programa de desarrollo juvenil">
+        </div>
+        <div class="infoProg1">
+                <h3>Programa de Entrenamiento Avanzado</h3>
+                <p>Diseñado para jugadores con experiencia, <br> este programa se centra en mejorar
+                habilidades técnicas, <br> tácticas y físicas para competir a niveles más altos.</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
